@@ -34,9 +34,9 @@ python extra_feat.py --file_path ../tile_results
 
 This project involves the extraction of radiomics features using the pyradiomics 3.1.0. The dataset includes features extracted from pre-treatment and early on-treatment CT scans.
 
-1. **Radiomics Features Extraction:**
-   - Radiomics features before treatment are stored in `dataset/Immunotherapy_before_feature.xlsx`.
-   - Radiomics features after treatment are stored in `dataset/ImmunotherapyCT_after_feature.xlsx`.
+1. **Radiomic Features:**
+   - Radiomic features before treatment are stored in `dataset/Immunotherapy_before_feature.xlsx`.
+   - Radiomic features of early on-treatment are stored in `dataset/ImmunotherapyCT_after_feature.xlsx`.
 
 2. **Clinical and Radiomics feature Integration:**
    - The combined dataset, which includes clinical variables and radiomics features, is stored in `combined.xlsx`.
