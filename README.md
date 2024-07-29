@@ -11,7 +11,9 @@ python create_patches_fp.py --source ../slides/TCGA-BRCA  --patch_size 256 --sav
 python save_tiles.py --patch_size 256 --sample_number 100 --save_dir ../tiles_result
 
 # Training contrastive learning model
-python3 train_adco.py --dist_url=tcp://localhost:10001 --data ../tiles_result/tiles_20x --save_path ../MODELS_SAVE --model_path ../MODELS_SAVE
+python3 train_adco.py --dist_url=tcp://localhost:10001 --data ../tiles_result/tiles_20x
+--save_path ../MODELS_SAVE
+--model_path ../MODELS_SAVE
 ```
 
 ### Extracting patch-level features
