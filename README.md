@@ -2,7 +2,7 @@
 
 
 ### H&E slide preprocessing
-We follow our former WSI preprocessing solution (https://github.com/hliulab/wsi2recurrence)
+We follow our former WSI preprocessing pipeline (see https://github.com/hliulab/wsi2recurrence)
 
 ```python
 # WSI Segmentation and Patching
