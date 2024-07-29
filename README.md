@@ -38,7 +38,7 @@ This project involves the extraction of radiomics features using the pyradiomics
    - Radiomic features before treatment are stored in `dataset/Immunotherapy_before_feature.xlsx`.
    - Radiomic features of early on-treatment are stored in `dataset/ImmunotherapyCT_after_feature.xlsx`.
 
-2. **Clinical and Radiomics feature Integration:**
+2. **Clinical and Radiomic feature Integration:**
    - The combined dataset, which includes clinical variables and radiomics features, is stored in `combined.xlsx`.
 
 ### Training for PD-L1 level prediction using multimodal features
