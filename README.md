@@ -30,7 +30,18 @@ python extra_feat.py --file_path ../tile_results
 --model_path ../MODELS_SAVE/adco_tcga.pth.tar
 ```
 
-### Predicting PD-L1 level using multimodal features
+### Radiomic Features Extraction
+
+This project involves the extraction of radiomics features using the pyradiomics 3.1.0. The dataset includes features extracted from pre-treatment and early on-treatment CT scans.
+
+1. **Radiomics Features Extraction:**
+   - Radiomics features before treatment are stored in `dataset/Immunotherapy_before_feature.xlsx`.
+   - Radiomics features after treatment are stored in `dataset/ImmunotherapyCT_after_feature.xlsx`.
+
+2. **Clinical and Radiomics feature Integration:**
+   - The combined dataset, which includes clinical variables and radiomics features, is stored in `combined.xlsx`.
+
+### Training for PD-L1 level prediction using multimodal features
 
 ```python
 python train.py --task PD-L1 --files_path files
@@ -40,7 +51,7 @@ python train.py --task PD-L1 --files_path files
 --save output
 ```
 
-### Predicting immunotherapy response using multimodal features
+### Training for immunotherapy response prediction using multimodal features
 
 ```python
 python train_immunotherapy.py --task Immunotherapy --files_path feat_Immunotherapy
